@@ -84,7 +84,7 @@ bar:
   offset_y: "10"
   border_radius: "5"
   component_separator:
-    label: " | "
+    label: "  "
   components_left:
     - type: "tiling direction"
       label_horizontal: "⮂"
@@ -162,14 +162,28 @@ bar:
 
 workspaces:
   - name: "1"
+    # display_name: "󰋞"
+    keep_alive: true
   - name: "2"
+    # display_name: "" # centered, small
+    # display_name: ""
   - name: "3"
+    # display_name: ""
+    # display_name: ""
+    # display_name: ""
   - name: "4"
+    # display_name: "󰂺"
+    # display_name: ""
   - name: "5"
+    # display_name: ""
   - name: "6"
+    # display_name: ""
   - name: "7"
+    # display_name: ""
   - name: "8"
+    # display_name: ""
   - name: "9"
+    # display_name: ""
 
 window_rules:
   # Task Manager requires admin privileges to manage and should be ignored unless running
@@ -190,6 +204,13 @@ window_rules:
   # Some applications (eg. Steam) have borders that extend past the normal border size.
   - command: "resize borders 0px -7px -7px -7px"
     match_process_name: "steam"
+
+  - command: "ignore"
+    match_process_name: "eso64"
+
+  - command: "ignore"
+    match_process_name: "DaggerfallUnity"
+
 
 binding_modes:
   - name: "resize"
