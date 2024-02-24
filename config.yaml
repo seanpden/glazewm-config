@@ -163,14 +163,17 @@ bar:
 workspaces:
   - name: "1"
     # display_name: "󰋞"
+    display_name: "home"
     keep_alive: true
   - name: "2"
     # display_name: "" # centered, small
     # display_name: ""
+    display_name: "web"
   - name: "3"
     # display_name: ""
     # display_name: ""
     # display_name: ""
+    display_name: "comms"
   - name: "4"
     # display_name: "󰂺"
     # display_name: ""
@@ -206,10 +209,13 @@ window_rules:
     match_process_name: "steam"
 
   - command: "ignore"
-    match_process_name: "eso64"
+    match_process_name: "eso64|DaggerfallUnity|valheim"
 
-  - command: "ignore"
-    match_process_name: "DaggerfallUnity"
+  - command: "move to workspace 2"
+    match_process_name: "firefox"
+
+  - command: "move to workspace 3"
+    match_process_name: "Discord|mailspring"
 
 
 binding_modes:
