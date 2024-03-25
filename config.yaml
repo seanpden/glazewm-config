@@ -120,7 +120,7 @@ bar:
       # background: "#ffffff33"
       # background: *crust
       # background: "#23263475"
-      background: "#18192675"
+      background: "#18192600"
       margin: "0 4px"
       padding: "0 8px"
     - type: "workspaces"
