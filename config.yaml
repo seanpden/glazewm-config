@@ -209,7 +209,7 @@ window_rules:
     match_process_name: "firefox"
 
   - command: "move to workspace 3"
-    match_process_name: "Discord|mailspring"
+    match_process_name: "Discord|mailspring|slack"
 
 
 binding_modes:
