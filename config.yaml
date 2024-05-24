@@ -203,7 +203,8 @@ window_rules:
     match_process_name: "steam"
 
   - command: "ignore"
-    match_process_name: "eso64|DaggerfallUnity|valheim|OpenMW|openmw|openmw.exe|streaming_client.exe"
+    match_process_name: "eso64|DaggerfallUnity|valheim|OpenMW|openmw|openmw.exe|streaming_client.exe|NieRAutomata|ForzaHorizon5.exe"
+    match_title: "Forza Horizon 5|.?[Ff]orza.?"
 
   - command: "move to workspace 2"
     match_process_name: "firefox"
